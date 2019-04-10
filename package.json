@@ -1,12 +1,22 @@
 {
-  "name": "application-name",
-  "version": "2.0.0",
+  "name": "TICTACTOE",
+  "version": "1.0.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "start": "node server"
-  },  
-"license": "Apache",
-"engines": {
+    "start": "node src",
+    "dev":"nodemon src"
+  },
+  "license": "Apache",
+  "engines": {
     "node": "~0.10.0 || ~4.2.0"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
   }
 }
