@@ -1,12 +1,4 @@
 const http = require('http');
-
-http.createServer(function (req, res) {
-
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('PRUEBA DESDE GIT HUB! by vlady');
-    
-}).listen(process.env.PORT || 8080);
-/*
 const express = require('express');
 const app  = express();
 //const io = require('socket.io');
@@ -20,6 +12,7 @@ app.use(express.static(__dirname+"/public"));
 
 server.listen(app.get('port'), function(){
     console.log("Servidor iniciado");
+    console.log(__dirname+"/public");
 });
 
 //var socket = io.listen(server);
