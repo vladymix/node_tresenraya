@@ -4,8 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node src",
-    "dev":"nodemon src"
+    "start": "node server",
+    "dev":"nodemon server"
   },
   "license": "Apache",
   "engines": {
