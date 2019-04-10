@@ -9,10 +9,12 @@ app.set('port',process.env.PORT || 8080);
 
 app.use(express.static(__dirname+"/public"));
 
+app.get('/', (req,res)=>{
+    res.render(index.html)
+})
 
 server.listen(app.get('port'), function(){
-    console.log("Servidor iniciado");
-    console.log(__dirname+"/public");
+    console.log("Servidor iniciado en port:"+ app.get('port'));
 });
 
 //var socket = io.listen(server);
