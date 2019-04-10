@@ -1,7 +1,7 @@
 const http = require('http');
 const express = require('express');
 const app  = express();
-const io = require('socket.io');
+//const io = require('socket.io');
 
 const server = http.createServer(app);
 
@@ -14,11 +14,11 @@ server.listen(app.get('port'), function(){
     console.log("Servidor iniciado");
 });
 
-var socket = io.listen(server);
+//var socket = io.listen(server);
 
-socket.on('connection', function(socket){
+/*socket.on('connection', function(socket){
  console.log('cliente conectado');
-})
+})*/
 
 /*http.createServer(function (req, res) {
 
