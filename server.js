@@ -11,8 +11,7 @@ app.use(express.static(__dirname+"/public"));
 
 
 server.listen(app.get('port'), function(){
-console.log("Servidor iniciado");
-
+    console.log("Servidor iniciado");
 });
 
 var socket = io.listen(server);
@@ -20,7 +19,6 @@ var socket = io.listen(server);
 socket.on('connection', function(socket){
  console.log('cliente conectado');
 })
-
 
 /*http.createServer(function (req, res) {
 
