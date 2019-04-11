@@ -8,7 +8,7 @@
     var playerOneScoreCard = document.getElementById('player-one-score');
     var playerTwoScoreCard = document.getElementById('player-two-score');
 
-var socke = io();
+//var socke = io();
 //alert(socke.turnDisplay);
     // Vars
     var context = { 'player1' : 'x', 'player2' : 'o' };
