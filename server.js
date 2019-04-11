@@ -29,7 +29,7 @@ app.use(express.static(__dirname+"/public"));
 
 app.use('/', router); */
 
-server.listen(app.get('port'), function(){
+/*server.listen(app.get('port'), function(){
     console.log("Servidor iniciado en port:"+ app.get('port'));
 });
 
