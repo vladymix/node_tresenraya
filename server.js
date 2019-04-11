@@ -1,14 +1,4 @@
 const http = require('http');
-
-http.createServer(function (req, res) {
-
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('PRUEBA con Jorge! by vlady');
-    
-}).listen(process.env.PORT || 8080);
-
-
-/*
 const express = require('express');
 const app  = express();
 
@@ -29,7 +19,7 @@ app.use(express.static(__dirname+"/public"));
 
 app.use('/', router); */
 
-/*server.listen(app.get('port'), function(){
+server.listen(app.get('port'), function(){
     console.log("Servidor iniciado en port:"+ app.get('port'));
 });
 
